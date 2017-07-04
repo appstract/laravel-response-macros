@@ -1,0 +1,1 @@
+# Laravel Response Macros
