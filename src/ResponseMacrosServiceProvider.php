@@ -24,8 +24,6 @@ class ResponseMacrosServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->mergeConfigFrom(__DIR__.'/../config/bootstrap-components.php', 'bootstrap-components');
-
-        // $this->app->register(ResponseMacrosServiceProvider::class);
+        // register
     }
 }
