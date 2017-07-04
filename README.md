@@ -34,6 +34,15 @@ Then add the ServiceProvider to your `config/app.php` file:
 return response()->message('hello world!', 200);
 ```
 
+## Results in
+
+``` json
+{
+"message": "hello world!",
+"status": 200
+}
+```
+
 ## Testing
 
 ``` bash
