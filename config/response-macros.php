@@ -2,6 +2,6 @@
 
 return [
 
-    'testingHi' => true,
+    'setting' => true,
 
 ];

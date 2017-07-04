@@ -3,6 +3,7 @@
 namespace Appstract\ResponseMacros;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Response;
 
 class ResponseMacrosServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,6 @@ class ResponseMacrosServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // register
+        $this->app->make('Appstract\ResponseMacros\ResponseMacros');
     }
 }
