@@ -38,8 +38,8 @@ return response()->message('hello world!', 200);
 
 ``` json
 {
-"message": "hello world!",
-"status": 200
+    "message": "hello world!",
+    "status": 200
 }
 ```
 
