@@ -2,28 +2,36 @@
 
 namespace Appstract\ResponseMacros;
 
+use Appstract\ResponseMacros\Macros;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Contracts\Routing\ResponseFactory;
 
 class ResponseMacros
 {
 
+	protected $macros = [];
+
     /**
      * Constructor.
      */
     public function __construct(ResponseFactory $factory)
     {
-    	// response()->message('hello world!', 200);
+    	$this->macros = [
+    		Macros\Message::class
+    	];
 
-        $factory->macro('message', function ($message, $status) use ($factory) {
-            
-            $customFormat = [
-                'message' => $message,
-                'status' => $status
-            ];
+    	$this->BindMarcos($factory);
+    }
 
-            return $factory->make($customFormat);
-        });
+    /**
+     * BindMarcos
+     */
+    public function BindMarcos($factory)
+    {
+    	foreach ($this->macros as $macro) 
+    	{
+    		(new $macro)->run($factory);
+    	}
     }
 
 }
