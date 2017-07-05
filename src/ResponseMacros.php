@@ -20,13 +20,13 @@ class ResponseMacros
     		Macros\Message::class
     	];
 
-    	$this->bindmMacros($factory);
+    	$this->bindMacros($factory);
     }
 
     /**
      * Bind the macros
      */
-    public function bindmMacros($factory)
+    public function bindMacros($factory)
     {
     	foreach ($this->macros as $macro) 
     	{
