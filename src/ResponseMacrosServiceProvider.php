@@ -3,7 +3,6 @@
 namespace Appstract\ResponseMacros;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Response;
 
 class ResponseMacrosServiceProvider extends ServiceProvider
 {
