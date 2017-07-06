@@ -9,12 +9,10 @@ class Message implements ResponseMacroInterface
     public function run($factory)
     {
         $factory->macro('message', function ($message, $status) use ($factory) {
-            $customFormat = [
+            return $factory->make([
                 'message' => $message,
                 'status' => $status,
-            ];
-
-            return $factory->make($customFormat);
+            ]);
         });
     }
 }

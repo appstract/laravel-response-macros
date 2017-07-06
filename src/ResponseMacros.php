@@ -2,15 +2,19 @@
 
 namespace Appstract\ResponseMacros;
 
-
 use Illuminate\Contracts\Routing\ResponseFactory;
 
 class ResponseMacros
 {
+    /**
+     * Macros.
+     * @var array
+     */
     protected $macros = [];
 
     /**
      * Constructor.
+     * @param ResponseFactory $factory
      */
     public function __construct(ResponseFactory $factory)
     {
@@ -23,7 +27,9 @@ class ResponseMacros
     }
 
     /**
-     * Bind the macros.
+     * Bind macros.
+     * @param  ResponseFactory $factory
+     * @return void
      */
     public function bindMacros($factory)
     {
