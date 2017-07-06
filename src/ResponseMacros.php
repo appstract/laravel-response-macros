@@ -17,7 +17,8 @@ class ResponseMacros
     public function __construct(ResponseFactory $factory)
     {
     	$this->macros = [
-    		Macros\Message::class
+    		Macros\Message::class,
+    		Macros\Pdf::class
     	];
 
     	$this->bindMacros($factory);
