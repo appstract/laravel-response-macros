@@ -12,7 +12,6 @@ class ResponseMacrosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/response-macros.php' => config_path('response-macros.php'),
