@@ -11,7 +11,7 @@ class Pdf implements ResponseMacroInterface
         $factory->macro('pdf', function ($pdf, $fileName, $download = false) use ($factory) {
             return $factory->make($pdf)->withHeaders(collect([
                 'Content-Type' => 'application/pdf',
-            ])->when($download, function ($collection) {
+            ])->when($download, function ($collection) use ($fileName) {
                 return $collection->put('Content-Disposition', 'attachment; filename="'.$fileName.'"');
             })->toArray());
         });
