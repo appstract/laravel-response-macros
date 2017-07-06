@@ -5,7 +5,7 @@ namespace Appstract\ResponseMacros;
 interface ResponseMacroInterface
 {
     /**
-     * [run description].
+     * Run.
      * @param  ResponseFactory $factory
      */
     public function run($factory);
