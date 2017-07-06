@@ -23,7 +23,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 'providers' => [
     ...
 
-    Appstract\Skeleton\ResponseMacrosServiceProvider::class
+    Appstract\ResponseMacros\ResponseMacrosServiceProvider::class,
 
     ....
 ```
