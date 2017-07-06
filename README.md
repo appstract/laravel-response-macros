@@ -25,7 +25,8 @@ Then add the ServiceProvider to your `config/app.php` file:
 
     Appstract\ResponseMacros\ResponseMacrosServiceProvider::class,
 
-    ....
+    ...
+]
 ```
 
 ## Usage
