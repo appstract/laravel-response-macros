@@ -12,7 +12,7 @@ This package is a collection of custom response macros that you can re-use in a 
 You can install the package via composer:
 
 ``` bash
-composer require appstract/:package_name
+composer require appstract/laravel-response-macros
 ```
 
 ### Provider
