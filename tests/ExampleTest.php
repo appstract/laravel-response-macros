@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\BootstrapComponents\Test;
+namespace Appstract\ResponseMacros\Test;
 
 class ExampleTest extends \PHPUnit_Framework_TestCase
 {
