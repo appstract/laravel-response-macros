@@ -1,7 +1,7 @@
 # Laravel Response Macros
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/appstract/:package_name.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-response-macros)
-[![Total Downloads](https://img.shields.io/packagist/dt/appstract/:package_name.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-response-macros)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/appstract/laravel-response-macros.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-response-macros)
+[![Total Downloads](https://img.shields.io/packagist/dt/appstract/laravel-response-macros.svg?style=flat-square)](https://packagist.org/packages/appstract/laravel-response-macros)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/appstract/:package_name/master.svg?style=flat-square)](https://travis-ci.org/appstract/laravel-response-macros)
 
