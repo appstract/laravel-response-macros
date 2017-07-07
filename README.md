@@ -29,7 +29,7 @@ Then add the ServiceProvider to your `config/app.php` file:
 ]
 ```
 
-## Usage
+## Example
 
 ``` php
 return response()->message('hello world!', 200);
@@ -39,8 +39,7 @@ return response()->message('hello world!', 200);
 
 ``` json
 {
-    "message": "hello world!",
-    "status": 200
+    "message": "hello world!"
 }
 ```
 
