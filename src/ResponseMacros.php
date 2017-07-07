@@ -20,7 +20,9 @@ class ResponseMacros
     {
         $this->macros = [
             Macros\Message::class,
-            Macros\Pdf::class,
+            Macros\Success::class,
+            Macros\Error::class,
+            Macros\Pdf::class
         ];
 
         $this->bindMacros($factory);
