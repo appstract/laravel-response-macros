@@ -11,8 +11,7 @@ class Message implements ResponseMacroInterface
         $factory->macro('message', function ($message, $status) use ($factory) {
             return $factory->make([
                 'message' => $message,
-                'status' => $status,
-            ]);
+            ], $status);
         });
     }
 }
