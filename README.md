@@ -42,6 +42,7 @@ return response()->message('hello world!', 200);
     "message": "hello world!"
 }
 ```
+With the Http Status Code:200 OK
 
 ## Testing
 
