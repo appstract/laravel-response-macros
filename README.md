@@ -29,20 +29,57 @@ Then add the ServiceProvider to your `config/app.php` file:
 ]
 ```
 
-## Example
+## Usage
 
+### Message
 ``` php
 return response()->message('hello world!', 200);
 ```
 
-## Result
+Result
 
 ``` json
 {
     "message": "hello world!"
 }
 ```
-With the Http `Status Code:200 OK`
+With the Http `Status Code:200`
+
+### Error
+``` php
+return response()->error('Something went wrong', $statuscode = 400);
+```
+
+Result
+
+``` json
+{
+    "message": "Something went wrong"
+}
+```
+With the Http `Status Code:400`
+
+### Success
+``` php
+return response()->success(['some' => 'data'], $statuscode = 200);
+```
+
+Result
+
+``` json
+{
+    "data": {"some": "data"}
+}
+```
+With the Http `Status Code:200`
+
+### PDF
+
+Creates a (downloadable) PDF response from PDF contents.
+
+``` php
+return response()->pdf($pdfData, 'filename.pdf', $download = false);
+```
 
 ## Testing
 
