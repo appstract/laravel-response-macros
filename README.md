@@ -15,20 +15,6 @@ You can install the package via composer:
 composer require appstract/laravel-response-macros
 ```
 
-### Provider
-
-Then add the ServiceProvider to your `config/app.php` file:
-
-```
-'providers' => [
-    ...
-
-    Appstract\ResponseMacros\ResponseMacrosServiceProvider::class,
-
-    ...
-]
-```
-
 ## Usage
 
 ### Message
@@ -43,7 +29,7 @@ Result
     "message": "hello world!"
 }
 ```
-With the Http `Status Code:200`
+With the Http `Status Code: 200`
 
 ### Error
 ``` php
@@ -57,7 +43,7 @@ Result
     "message": "Something went wrong"
 }
 ```
-With the Http `Status Code:400`
+With the Http `Status Code: 400`
 
 ### Success
 ``` php
@@ -71,7 +57,7 @@ Result
     "data": {"some": "data"}
 }
 ```
-With the Http `Status Code:200`
+With the Http `Status Code: 200`
 
 ### PDF
 
